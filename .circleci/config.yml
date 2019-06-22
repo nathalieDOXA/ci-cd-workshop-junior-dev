@@ -5,7 +5,7 @@ jobs:
       - image: circleci/node:10.15.3 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-      - run: npm install && eslint . # run the `echo` command
+      - run: npm run lint # run the `echo` command
   test:
     docker:
       - image: circleci/node:10.15.3
