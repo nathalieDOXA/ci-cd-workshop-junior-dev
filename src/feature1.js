@@ -1,9 +1,7 @@
-module.exports = {
-  registerName: (req) => {
-    return getNameFromParam(req);
-  }
+export function registerName(req) {
+  return getNameFromParam(req);
 }
 
-const getNameFromParam = (req) => {
+const getNameFromParam = () => {
   return "Voldemort"
 }

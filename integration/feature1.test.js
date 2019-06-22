@@ -1,4 +1,6 @@
+// eslint-disable-next-line no-undef
 const chai = require('chai');
+// eslint-disable-next-line no-unused-vars
 const should = chai.should();
 const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
