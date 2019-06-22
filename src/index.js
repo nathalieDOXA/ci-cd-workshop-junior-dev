@@ -1,6 +1,6 @@
 const express = require('express');
 
-const feature1 = require('./feature1');
+const feature1 = require('./feature1').default;
 
 const app = express();
 
