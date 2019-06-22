@@ -6,17 +6,17 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run: npm install && npm run lint # run the `echo` command
-  test:
-    docker:
-      - image: circleci/node:10.15.3
-    steps:
-      - checkout
-      - run: npm install && npm test
+  # test:
+  #   docker:
+  #     - image: circleci/node:10.15.3
+  #   steps:
+  #     - checkout
+  #     - run: npm install && npm run integration-test
 workflows:
   version: 2
   workflow1:
     jobs:
       - lint
-      - test:
-          requires:
-            - lint
+      # - test:
+      #     requires:
+      #       - lint

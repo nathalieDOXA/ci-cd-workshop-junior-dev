@@ -1,4 +1,4 @@
-export function registerName(req) {
+export default function registerName(req) {
   return getNameFromParam(req);
 }
 

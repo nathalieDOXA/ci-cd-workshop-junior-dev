@@ -1,7 +1,7 @@
-const feature1 = require("./feature1");
+import { registerName } from "./feature1";
 
 describe('Feature 1', () => {
   it('should register a name', () => {
-    expect(feature1.registerName({})).toEqual("Voldemort");
+    expect(registerName({})).toEqual("Voldemort");
   });
 });
