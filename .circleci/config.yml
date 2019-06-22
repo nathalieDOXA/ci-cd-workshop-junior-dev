@@ -23,6 +23,6 @@ workflows:
   workflow1:
     jobs:
       - lint
-      # - test:
-      #     requires:
-      #       - lint
+      - deploy:
+          requires:
+            - lint
